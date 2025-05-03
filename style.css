@@ -231,11 +231,12 @@ body {
      margin-left: 0;
 }
 .bottom__form{
+     width: 280px;
      display: flex;
      flex-direction: column;
 }
 .bottom__input{
-     width: 280px;
+     width: 100%;
      margin: 8px 0;
      border-color: #C4C4C4;
      background-color: white;
@@ -246,7 +247,7 @@ body {
      color: #C4C4C4;
 }
 .btn{
-     width: 280px;
+     width: 100%;
      height: 40px;
      border: none;
      border-radius: 16px;
