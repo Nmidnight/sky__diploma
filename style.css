@@ -154,7 +154,7 @@ body {
      row-gap: 48px;
 }
 .offer {
-     flex: 1 1 30%;
+     flex: 1 1 calc(33.3% - 32px);
      max-width: none; 
 }
 .offer__subtitle {
