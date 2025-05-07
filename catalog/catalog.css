@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+    height: 400px;
+    color: white;
+    background-image: url(img/catalog_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 64px;
+}
+
+.header__content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header__nav {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.500);
+}
+
+.header__logo {
+    width: 198px;
+}
+
+.input {
+    width: 288px;
+    height: 41px;
+    padding: 0 32px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    outline: none;
+    font: inherit;
+    color: inherit;
+}
+
+.input::placeholder {
+    color: white;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.header__item:last-child {
+    margin-left: 32px;
+}
+
+.header__item-link {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.header__title {
+    width: 760px;
+    margin: 126px 0;
+    font-weight: 600;
+    font-size: 64px;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__list {
+    display: flex;
+    gap: 10px;
+}
+
+.main__link {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.main__select {
+    display: flex;
+    gap: 10px;
+}
+
+.main__select-item {
+    height: 40px;
+    padding: 0 50px 0 23px;
+    border-radius: 20px;
+    appearance: none;
+    outline: none;
+    background-image: url(../svg/select.png);
+    background-repeat: no-repeat;
+    background-position: right 23px center;
+    font: inherit;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.main__select-popular {
+    font-weight: 400;
+}
+
+.main__catalog {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 48px;
+}
+
+.offer {
+    flex: 1 1 calc(33.3% - 32px);
+    max-width: none;
+    position: relative;
+
+}
+
+.offer:hover::after {
+    content: url(../svg/lock.png);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 58px;
+}
+.offer:hover::before {
+    content: url(../svg/like.png);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+}
+.offer__subtitle {
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.offer__description {
+    color: #888888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.offer__price {
+    display: flex;
+}
+
+.offer__cost {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.bottom {
+    margin-top: 64px;
+    padding: 32px 0 59px 0;
+    background-color: #F7F6F6;
+}
+
+.bottom__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bottom__logo {
+    width: 198px;
+}
+
+.bottom__listItem {
+    margin-top: 12px;
+}
+
+.bottom__listItem-main {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.bottom__link {
+    color: #888888;
+    font-size: 14px;
+}
+
+.bottom__menu {
+    display: flex;
+}
+
+.bottom__item {
+    margin-left: 20px;
+}
+
+.bottom__item:first-child {
+    margin-left: 0;
+}
+
+.bottom__form {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom__input {
+    width: 100%;
+    margin: 8px 0;
+    border-color: #C4C4C4;
+    background-color: white;
+    font: inherit;
+    font-size: 12px;
+}
+
+.bottom__input::placeholder {
+    color: #C4C4C4;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 16px;
+    background-color: hsla(0, 10%, 86%, 0.411);
+    font: inherit;
+    font-size: 12px;
+}
+
+.bottom__form-text {
+    font-size: 12px;
+}
+
+.bottom__info {
+    min-width: 790px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bottom__lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 129px;
+}

@@ -102,7 +102,7 @@ body {
 }
 .rooms__content{
      display: grid;
-     grid-template-columns: repeat(6, 1fr);
+     grid-template-columns: repeat(12, 1fr);
      grid-template-rows: repeat(2, 1fr);
      gap: 32px;
 
@@ -117,10 +117,10 @@ body {
      background-position:center;
 }
 .room:nth-child(n+1){
-     grid-column: span 3;
+     grid-column: span 6;
 }
 .room:nth-child(n+3){
-     grid-column: span 2;
+     grid-column: span 4;
 }
 .room-rest{
      background-image: url(img/Rectangle17.png);
