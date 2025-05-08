@@ -8,7 +8,9 @@
 a {
      text-decoration: none;
 }
-
+a:hover{
+     text-decoration: underline;
+}
 ul {
      list-style: none;
 }
@@ -72,7 +74,8 @@ body {
 .header__title{
      margin-top: 64px;
      margin-bottom: 16px;
-     width: 760px;
+     width: 792px;
+     text-wrap: balance;
      font-weight: 600;
      font-size: 64px;
      text-align: left;
@@ -86,7 +89,7 @@ body {
      color: white;
      text-decoration: underline;
      font-weight: 400;
-     font-size: 24px;
+     font-size: 16px;
 }
 .main{
      max-width: 1200px;
@@ -155,7 +158,7 @@ body {
 }
 .offer {
      flex: 1 1 calc(33.3% - 32px);
-     max-width: none; 
+     max-width: 378px; 
 }
 .offer__subtitle {
      margin: 10px 0;
@@ -241,6 +244,7 @@ body {
      border-color: #C4C4C4;
      background-color: white;
      font: inherit;
+     color: #000;
      font-size: 12px;
 }
 .bottom__input::placeholder{
