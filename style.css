@@ -335,9 +335,14 @@ body {
   gap: 129px;
 }
 
-.header {
+.header__catalog {
   background-image: url(catalog/img/catalog_bg.png);
   height: auto;
+  padding-bottom: 126px;
+  background-color: #888888;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main {
@@ -451,6 +456,16 @@ body {
   font-weight: 500;
 }
 
+.header__basket {
+  background-image: url(basket/img/headder-bg.png);
+  height: auto;
+  padding-bottom: 126px;
+  background-color: #888888;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .basket {
   display: grid;
   margin-bottom: 64px;
@@ -511,6 +526,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   text-decoration: underline;
+  color: inherit;
 }
 .basket__input {
   width: 71px;
