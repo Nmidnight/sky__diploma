@@ -1,0 +1,13 @@
+$text-color: white;
+
+@mixin bg-default {
+  background-color: #888888;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin header-bg{
+    height: auto;
+    padding-bottom: 126px;
+}

@@ -488,7 +488,7 @@ body {
   grid-row: span 6;
 }
 .basket__card-content {
-  border-top: 1px solid #CACDD8;
+  border-top: 1px solid #cacdd8;
   padding-top: 25px;
   padding-bottom: 32px;
   display: flex;
@@ -531,7 +531,7 @@ body {
 .basket__input {
   width: 71px;
   height: 51px;
-  background-color: #F7F6F6;
+  background-color: #f7f6f6;
   outline: none;
   border: none;
   border-radius: 6px;
@@ -561,7 +561,7 @@ body {
   gap: 35px;
   grid-row: 1/9;
   grid-column: span 4;
-  background-color: #F7F6F6;
+  background-color: #f7f6f6;
   border-radius: 20px;
 }
 .basket__title {
@@ -580,7 +580,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   color: #000;
-  border-bottom: 1px solid #CACDD8;
+  border-bottom: 1px solid #cacdd8;
   text-align: left;
 }
 .basket__form-item::-moz-placeholder {

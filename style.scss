@@ -1,0 +1,274 @@
+@use 'vars';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+}
+
+a {
+     text-decoration: none;
+}
+a:hover{
+     text-decoration: underline;
+}
+ul {
+     list-style: none;
+}
+
+body {
+     font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+     height: 735px;
+     color: white;
+     background-image: url(img/Rectangle15.jpg);
+     @include vars.bg-default;
+     margin-bottom: 64px;
+}
+.header__content {
+     max-width: 1200px;
+     width: 100%;
+     margin: 0 auto;
+     display: flex;
+    flex-direction: column;
+}
+.header__nav{
+     padding: 16px 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-bottom: 1px solid hsla(0, 0%, 100%, 0.500);
+}
+.header__logo {
+     width: 198px;
+}
+.input{
+     width: 288px;
+     height: 41px;
+     padding: 0 32px;
+     box-sizing: border-box;
+     border: 1px solid white;
+     border-radius: 20px;
+     background-color: transparent;
+     outline: none;
+     font:inherit;
+     color: white;
+}
+.input::placeholder {
+     color: white;
+}
+.header__menu{
+     display: flex;
+}
+.header__item:last-child{
+     margin-left: 32px;
+}
+.header__item-link {
+     font-weight: 400;
+     font-size: 16px;
+     color: vars.$text-color;
+}
+.header__title{
+     margin-top: 64px;
+     margin-bottom: 16px;
+     width: 792px;
+     text-wrap: balance;
+     font-weight: 600;
+     font-size: 64px;
+     text-align: left;
+}
+.header__text {
+     margin-bottom: 16px;
+     font-weight: 400;
+     font-size: 24px;
+}
+.header__link{
+     color: white;
+     text-decoration: underline;
+     font-weight: 400;
+     font-size: 16px;
+}
+.main{
+     max-width: 1200px;
+     margin: 0 auto;
+}
+.main__title {
+     font-weight: 600;
+     font-size: 48px;
+     margin-bottom: 32px;
+}
+.rooms{
+     margin: 64px 0;
+}
+.rooms__content{
+     display: grid;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-rows: repeat(2, 1fr);
+     gap: 32px;
+
+}
+.room{
+     height: 415px;
+     justify-items: center;
+     align-content: center;
+     @include vars.bg-default;
+}
+.room:nth-child(n+1){
+     grid-column: span 6;
+}
+.room:nth-child(n+3){
+     grid-column: span 4;
+}
+.room-rest{
+     background-image: url(img/Rectangle17.png);
+}
+.room-job{
+     background-image: url(img/Rectangle18.png);
+}
+.room-kitchen{
+     background-image: url(img/Rectangle19.png);
+}
+.room-children{
+     background-image: url(img/Rectangle20.png);
+}
+.room-bath{
+     background-image:  url(img/Rectangle21.png);
+}
+.offers{
+     margin-bottom: 64px;
+}
+.room__name{
+     color: white;
+     font-weight: 600;
+     font-size: 34px;
+     text-transform: uppercase;
+}
+.offers__content{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     column-gap: 32px;
+     row-gap: 48px;
+}
+.offer {
+     flex: 1 1 calc(33.3% - 32px);
+     max-width: 378px; 
+}
+.offer__subtitle {
+     margin: 10px 0;
+     font-weight: 500;
+     font-size: 24px;
+}
+.offer__description{
+     color: #888888;
+     font-size: 14px;
+     margin-bottom: 10px;
+}
+.offer__price {
+     display: flex;
+}
+.offer__cost{
+     font-size: 24px;
+     font-weight: 500;
+}
+.offer__cost-old{
+     margin-left: 32px;
+     font-weight: 500;
+     font-size: 24px;
+     color: #888888;
+     text-decoration: line-through;
+}
+.catalog__content{
+     display: flex;
+     flex-wrap: wrap;
+     column-gap: 32px;
+     row-gap: 48px;
+     margin-bottom: 31px;
+}
+.catalog__link{
+     font-weight: 400;
+     font-size: 16px;
+     color: black;
+     text-decoration: underline;
+}
+
+.bottom{
+     margin-top: 64px;
+     padding: 32px 0 59px 0;
+     background-color: #F7F6F6;
+}
+.bottom__content{
+     max-width: 1200px;
+     margin: 0 auto;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+}
+.bottom__logo{
+     width: 198px;
+}
+.bottom__listItem{
+     margin-top: 12px;
+}
+.bottom__listItem-main{
+     font-weight: 500;
+     font-size: 24px;
+}
+.bottom__link{
+     color: #888888;
+     font-size: 14px;
+}
+.bottom__menu{
+     display: flex;
+}
+.bottom__item{
+     margin-left: 20px;
+}
+.bottom__item:first-child{
+     margin-left: 0;
+}
+.bottom__form{
+     width: 280px;
+     display: flex;
+     flex-direction: column;
+}
+.bottom__input{
+     width: 100%;
+     margin: 8px 0;
+     border-color: #C4C4C4;
+     background-color: white;
+     font: inherit;
+     color: #000;
+     font-size: 12px;
+}
+.bottom__input::placeholder{
+     color: #C4C4C4;
+}
+.btn{
+     width: 100%;
+     height: 40px;
+     border: none;
+     border-radius: 16px;
+     background-color: hsla(0, 10%, 86%, 0.411);
+     font: inherit;
+     font-size: 12px;
+}
+.bottom__form-text{
+     font-size: 12px;
+}
+.bottom__info{
+     min-width: 790px;
+     display: flex; 
+     flex-wrap: wrap;
+     justify-content: space-between;
+}
+.bottom__lists{
+     display: flex;
+     flex-wrap: wrap;
+     gap: 129px;
+}
+@import 'catalog/catalog';
+
+ @import 'basket/basket.scss';
