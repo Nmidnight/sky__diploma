@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -12,11 +12,50 @@
     <header class="header">
         <div class="header__content">
             <nav class="header__nav">
-                <a href="index.html" class="header__logo"><img src="svg/logo.svg" alt="Интерьер"></a>
+                <a href="index.html"><img  class="header__logo" src="svg/logo.svg" alt="Интерьер"></a>
                 <input class=" input header__search" type="search" placeholder="Поиск">
                 <ul class="header__menu">
                     <li class="header__item"><a href="catalog/catalog.html" class="header__item-link">Каталог</a></li>
-                    <li class="header__item"><a href="basket/basket.html" class="header__item-link">Корзина</a></li>
+                    <li class="header__item header__item-basket">
+                        <a href="basket/basket.html" class="header__item-link header__item-basket">Корзина</a>
+                        <div class="basket__popup">
+                            <div class="basket__popup-content">
+                                <div class="basket__popup-card">
+                                    <img class="basket__popup-img" src="img/menu_small.png" alt="menu">
+                                    <div class="basket__popup-item">
+                                        <h3 class="basket__popup-name">Стол MENU</h3>
+                                        <p class="basket__popup-cost">34 000 руб.</p>
+                                        <div class="basket__link">
+                                            <a href="#" class="basket__card-link">Избранные</a>
+                                            <a href="#" class="basket__card-link">Удалить</a>
+                                        </div>
+                                    </div>
+                                    <input type="number" value="1" min="1" class="basket__input">
+                                </div>
+                                <div class="basket__popup-card">
+                                    <img class="basket__popup-img" src="img/nastan_small.png" alt="nastan">
+                                    <div class="basket__popup-item">
+                                        <h3 class="basket__popup-name">Диван NASTAN</h3>
+                                        <p class="basket__popup-cost">80 000 руб.</p>
+                                        <div class="basket__link">
+                                            <a href="#" class="basket__card-link">Избранные</a>
+                                            <a href="#" class="basket__card-link">Удалить</a>
+                                        </div>
+                                    </div>
+                                    <input type="number" value="1" min="1" class="basket__input">
+                                </div>
+                                <div class="basket__cost-bottom">
+                                    <p class="basket__cost-final">Итого: <span class="basket__cost-bold">114 000 руб.</span></p>
+                                    <button class="basket__popup-btn" type="submit">Оформить заказ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="header__icons">
+                    <li class="header__icons-item"><a href="#"><img class="header__icons-img" src="svg/search.svg" alt="search"></a></li>
+                    <li class="header__icons-item"><a href="#"><img class="header__icons-img" src="svg/menu.svg" alt="menu"></a></li>
+                    <li class="header__icons-item"><a href="basket/basket.html"><img class="header__icons-img" src="svg/basket.svg" alt="basket"></a></li>
                 </ul>
             </nav>
             <h1 class="header__title">Всё, чего заслуживает ваш дом</h1>
@@ -51,7 +90,8 @@
                 <article class="offer">
                     <img class="offer__img" src="img/Rectangle22.jpeg" alt="voda">
                     <h3 class="offer__subtitle">Люстра VODA</h3>
-                    <p class="offer__description">Основание из полированной нержавеющей стали, придает оригинальный парящий
+                    <p class="offer__description">Основание из полированной нержавеющей стали, придает оригинальный
+                        парящий
                         эффект.</p>
                     <div class="offer__price">
                         <p class="offer__cost">45 000 руб.</p>
@@ -61,7 +101,8 @@
                 <article class="offer">
                     <img class="offer__img" src="img/Rectangle23.jpeg" alt="ronald">
                     <h3 class="offer__subtitle">Диван RONALD</h3>
-                    <p class="offer__offer__description">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
+                    <p class="offer offer__description">Модель отличается простотой линий и форм, отсутствием броского
+                        декора.</p>
                     <div class="offer__price">
                         <p class="offer__cost">156 000 руб.</p>
                         <p class="offer__cost-old">198 000 руб.</p>
@@ -84,40 +125,46 @@
                 <article class="offer">
                     <img class="offer__img" src="img/Rectangle25.jpeg" alt="tatran">
                     <h3 class="offer__subtitle">Кровать TATRAN</h3>
-                    <p class="offer__description">Основание из полированной нержавеющей стали, придает оригинальный парящий
+                    <p class="offer__description">Основание из полированной нержавеющей стали, придает оригинальный
+                        парящий
                         эффект.</p>
                     <p class="offer__cost">120 000 руб.</p>
                 </article>
                 <article class="offer">
                     <img class="offer__img" src="img/viora.jpeg" alt="viora">
                     <h3 class="offer__subtitle">Кресло VILORA</h3>
-                    <p class="offer__description">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на
+                    <p class="offer__description">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и
+                        приятная на
                         ощупь ткань.</p>
                     <p class="offer__cost">21 000 руб.</p>
                 </article>
                 <article class="offer">
                     <img class="offer__img" src="img/menu.jpeg" alt="menu">
                     <h3 class="offer__subtitle">Стол MENU</h3>
-                    <p class="offer__description">Для того чтобы трапезничать было приятно, необходим правильный обеденный
+                    <p class="offer__description">Для того чтобы трапезничать было приятно, необходим правильный
+                        обеденный
                         стол.</p>
                     <p class="offer__cost">34 000 руб.</p>
                 </article>
                 <article class="offer">
                     <img class="offer__img" src="img/askesta.jpg" alt="askesta">
                     <h3 class="offer__subtitle">Кресло ASKESTA</h3>
-                    <p class="offer__description">Высокоэластичный пенополиуретан в «начинке» кресла надежен и долговечен</p>
+                    <p class="offer__description">Высокоэластичный пенополиуретан в «начинке» кресла надежен и
+                        долговечен</p>
                     <p class="offer__cost">68 000 руб.</p>
                 </article>
                 <article class="offer">
                     <img class="offer__img" src="img/norman.jpg" alt="norman">
                     <h3 class="offer__subtitle">Стол NORMAN</h3>
-                    <p class="offer__description">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки</p>
+                    <p class="offer__description">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки
+                    </p>
                     <p class="offer__cost">40 000 руб.</p>
                 </article>
                 <article class="offer">
                     <img class="offer__img" src="img/nastan.jpg" alt="nastan">
                     <h3 class="offer__subtitle">Диван NASTAN</h3>
-                    <p class="offer__description">Модель отличается простотой линий и форм, отсутствием броского декора. </p>
+                    <p class="offer__description">Модель отличается простотой линий и форм, отсутствием броского декора.
+                    </p>
                     <p class="offer__cost">80 000 руб.</p>
                 </article>
             </div>
@@ -132,21 +179,24 @@
                     <ul class="bottom__nav">
                         <li class="bottom__listItem-main">Меню</li>
                         <li class="bottom__listItem"><a href="index.html" class="bottom__link">Главная</a></li>
-                        <li class="bottom__listItem"><a href="catalog/catalog.html" class="bottom__link">Каталог</a></li>
+                        <li class="bottom__listItem"><a href="catalog/catalog.html" class="bottom__link">Каталог</a>
+                        </li>
                         <li class="bottom__listItem"><a href="basket/basket.html" class="bottom__link">Корзина</a></li>
                     </ul>
                     <ul class="bottom__contacts">
                         <li class="bottom__listItem-main">Контакты</li>
-                        <li class="bottom__listItem"><a href="tel:+79088008080" class="bottom__link">+7&nbsp;908&nbsp;800&nbsp;80&nbsp;80</a></li>
-                        <li class="bottom__listItem"><a href="mailto:help@interier.com" class="bottom__link">help@interier.com</a></li>
+                        <li class="bottom__listItem"><a href="tel:+79088008080"
+                                class="bottom__link">+7&nbsp;908&nbsp;800&nbsp;80&nbsp;80</a></li>
+                        <li class="bottom__listItem"><a href="mailto:help@interier.com"
+                                class="bottom__link">help@interier.com</a></li>
                         <li class="bottom__listItem">
                             <ul class="bottom__menu">
                                 <li class="bottom__item"><a href="#" class="bottom__item-link"><img src="svg/vk.svg"
                                             alt="vk"></a></li>
                                 <li class="bottom__item"><a href="#" class="bottom__item-link"><img
                                             src="svg/telegram.svg" alt="telegram"></a></li>
-                                <li class="bottom__item"><a href="#" class="bottom__item-link"><img
-                                            src="svg/dzen.svg" alt="dzen"></a></li>
+                                <li class="bottom__item"><a href="#" class="bottom__item-link"><img src="svg/dzen.svg"
+                                            alt="dzen"></a></li>
                             </ul>
                         </li>
                     </ul>

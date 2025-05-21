@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -12,11 +12,16 @@
     <header class="header header__catalog">
         <div class="header__content">
             <nav class="header__nav">
-                <a href="../index.html" class="header__logo"><img src="../svg/logo.svg" alt="Интерьер"></a>
+                <a href="../index.html"><img class="header__logo" src="../svg/logo.svg" alt="Интерьер"></a>
                 <input class=" input header__search" type="search" placeholder="Поиск">
                 <ul class="header__menu">
                     <li class="header__item"><a href="catalog.html" class="header__item-link">Каталог</a></li>
                     <li class="header__item"><a href="../basket/basket.html" class="header__item-link">Корзина</a></li>
+                </ul>
+                <ul class="header__icons">
+                    <li class="header__icons-item"><a href="#"><img class="header__icons-img" src="../svg/search.svg" alt="search"></a></li>
+                    <li class="header__icons-item"><a href="#"><img class="header__icons-img" src="../svg/menu.svg" alt="menu"></a></li>
+                    <li class="header__icons-item"><a href="../basket/basket.html"><img class="header__icons-img" src="../svg/basket.svg" alt="basket"></a></li>
                 </ul>
             </nav>
             <h1 class="header__title">Каталог</h1>
@@ -30,7 +35,7 @@
                 <li class="main__list-item"><a href="catalog.html" class="main__link">Каталог товаров</a></li>
             </ul>
             <div class="main__select">
-                <button type="button" class="main__select-item">Фильтрация</button>
+                <button type="button" class="main__select-item main__select-filter">Фильтрация</button>
                 <div class="main__button-setting">
                     <form class="main__form">
                         <div class="main__form-box">
@@ -277,7 +282,7 @@
             </div>
         </div>
     </footer>
-    <script src="../script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

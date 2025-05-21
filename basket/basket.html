@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -12,12 +12,20 @@
     <header class="header header__basket">
         <div class="header__content">
             <nav class="header__nav">
-                <a href="../index.html" class="header__logo"><img src="../svg/logo.svg" alt="Интерьер"></a>
+                <a href="../index.html" ><img class="header__logo" src="../svg/logo.svg" alt="Интерьер"></a>
                 <input class=" input header__search" type="search" placeholder="Поиск">
                 <ul class="header__menu">
                     <li class="header__item"><a href="../catalog/catalog.html" class="header__item-link">Каталог</a>
                     </li>
                     <li class="header__item"><a href="basket.html" class="header__item-link">Корзина</a></li>
+                </ul>
+                <ul class="header__icons">
+                    <li class="header__icons-item"><a href="#"><img class="header__icons-img" src="../svg/search.svg"
+                                alt="search"></a></li>
+                    <li class="header__icons-item"><a href="#"><img class="header__icons-img" src="../svg/menu.svg"
+                                alt="menu"></a></li>
+                    <li class="header__icons-item"><a href="basket/basket.html"><img class="header__icons-img"
+                                src="../svg/basket.svg" alt="basket"></a></li>
                 </ul>
             </nav>
             <h1 class="header__title">Корзина </h1>
@@ -33,38 +41,39 @@
                 <div class="basket__card-content">
                     <img src="img/menu_small.png" alt="menu">
                     <div class="basket__content-box">
-                    <div class="basket__card-item">
-                        <h3 class="basket__card-name">Стол MENU</h3>
-                        <p class="basket__card-text">Для того чтобы трапезничать было приятно, необходим правильный
-                            обеденный стол.</p>
-                        <p class="basket__cost">34 000 руб.</p>
-                        <div class="basket__link">
-                            <a href="#" class="basket__link-item">Избранные</a>
-                            <a href="#" class="basket__link-item">Удалить</a>
+                        <div class="basket__card-item">
+                            <h3 class="basket__card-name">Стол MENU</h3>
+                            <p class="basket__card-text">Для того чтобы трапезничать было приятно, необходим правильный
+                                обеденный стол.</p>
+                            <p class="basket__cost">34 000 руб.</p>
+                            <div class="basket__link">
+                                <a href="#" class="basket__link-item">Избранные</a>
+                                <a href="#" class="basket__link-item">Удалить</a>
+                            </div>
                         </div>
+                        <input type="number" value="1" min="1" class="basket__input">
                     </div>
-                    <input type="number" value="1" min="1" class="basket__input">
                 </div>
-                </div>
-                                <div class="basket__card-content">
+                <div class="basket__card-content">
                     <img src="img/nastan_small.png" alt="nastan">
                     <div class="basket__content-box">
-                    <div class="basket__card-item">
-                        <h3 class="basket__card-name">Диван NASTAN</h3>
-                        <p class="basket__card-text">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
-                        <p class="basket__cost">80 000 руб.</p>
-                        <div class="basket__link">
-                            <a href="#" class="basket__link-item">Избранные</a>
-                            <a href="#" class="basket__link-item">Удалить</a>
+                        <div class="basket__card-item">
+                            <h3 class="basket__card-name">Диван NASTAN</h3>
+                            <p class="basket__card-text">Модель отличается простотой линий и форм, отсутствием броского
+                                декора.</p>
+                            <p class="basket__cost">80 000 руб.</p>
+                            <div class="basket__link">
+                                <a href="#" class="basket__link-item">Избранные</a>
+                                <a href="#" class="basket__link-item">Удалить</a>
+                            </div>
                         </div>
+                        <input type="number" value="1" min="1" class="basket__input">
                     </div>
-                    <input type="number" value="1" min="1" class="basket__input">
-                </div>
                 </div>
             </div>
             <div class="basket__buttons">
                 <button type="reset" class="basket__button-item">Очистить корзину</button>
-                <button type="submit" class="basket__button-item">Продолжить покупки</button>
+                <button type="submit" class="basket__button-item basket__button-black">Продолжить покупки</button>
             </div>
             <form class="basket__form">
                 <h3 class="basket__title">Оформление заказа</h3>
