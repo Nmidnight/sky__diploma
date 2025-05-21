@@ -1010,6 +1010,10 @@ input[type=checkbox]:checked + label::after {
 }
 
 @media (max-width: 800px) {
+  .header__catalog {
+    background-image: url(../img/mobile/catalog_header.png);
+    background-position: left center;
+  }
   .main {
     margin-top: 32px;
   }
@@ -1233,6 +1237,10 @@ input[type=checkbox]:checked + label::after {
   }
 }
 @media (max-width: 800px) {
+  .header__basket {
+    background-image: url(../img/mobile/basket_header.png);
+    background-position: right center;
+  }
   .basket__card-content img {
     display: none;
   }
@@ -1242,7 +1250,9 @@ input[type=checkbox]:checked + label::after {
   .basket__card-name {
     font-size: 18px;
   }
-  .basket__card-text, .basket__cost, .basket__button-item {
+  .basket__card-text,
+  .basket__cost,
+  .basket__button-item {
     font-size: 12px;
   }
   .basket__link-item {

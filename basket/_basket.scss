@@ -149,40 +149,45 @@
     }
 }
 
-@media (max-width: 1200px){
-    
-.basket {
-    display: grid;
-    margin-bottom: 64px;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+@media (max-width: 1200px) {
+    .basket {
+        display: grid;
+        margin-bottom: 64px;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(16, 1fr);
 
-        &__form{
+        &__form {
             margin: 0;
             grid-row: 9/19;
         }
-        
-        &__button-black{
+
+        &__button-black {
             background-color: #000;
             color: white;
         }
     }
 }
 
-@media ( max-width: 800px){
-    .basket__card-content img{
+@media (max-width: 800px) {
+    .header__basket {
+        background-image: url(../img/mobile/basket_header.png);
+        background-position: right center;
+    }
+    .basket__card-content img {
         display: none;
     }
-    .basket{
+    .basket {
         grid-template-columns: repeat(4, 1fr);
     }
-    .basket__card-name{
+    .basket__card-name {
         font-size: 18px;
     }
-    .basket__card-text, .basket__cost, .basket__button-item{
+    .basket__card-text,
+    .basket__cost,
+    .basket__button-item {
         font-size: 12px;
     }
-    .basket__link-item{
+    .basket__link-item {
         font-size: 14px;
     }
 }
