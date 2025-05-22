@@ -222,6 +222,24 @@ body {
 .offer {
      flex-basis: calc(33.3% - 32px);
 }
+.offer__img {
+     max-width: 378px;
+     position: relative;
+}
+.offer__icons{
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     z-index: 4;
+     display: flex;
+     gap: 20px;
+}
+.offer__icons img{
+      display: none;
+ }
+.offer__img:hover .offer__icons img {
+  display: block;
+}
 .offer__subtitle {
      margin: 8px 0;
      font-weight: 500;
