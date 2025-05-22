@@ -299,4 +299,7 @@ input[type="checkbox"]:checked + label::after{
     .main__form-button{
         margin-top: 36px;
     }
+    .offer__img:hover .offer__icons img {
+        display: none;
+}
 }

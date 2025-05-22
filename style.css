@@ -8,8 +8,29 @@
     opacity: 1;
   }
 }
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.pop_up--visible {
+  display: block;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+
 .pop_up--hiding {
-  animation: fadeOut 0.5s ease forwards;
+  animation: fadeOut ease 1s;
+  -webkit-animation: fadeOut ease 1s;
+  -moz-animation: fadeOut ease 1s;
+  -o-animation: fadeOut ease 1s;
+  -ms-animation: fadeOut ease 1s;
 }
 
 * {
@@ -140,11 +161,6 @@ body {
   z-index: 3;
   box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.2039215686);
   background: #fff;
-  animation: fadeIn ease 1s;
-  -webkit-animation: fadeIn ease 1s;
-  -moz-animation: fadeIn ease 1s;
-  -o-animation: fadeIn ease 1s;
-  -ms-animation: fadeIn ease 1s;
   width: 573px;
   height: 480px;
   transform: translate(-85%, 18px);
@@ -588,12 +604,6 @@ body {
   .offer img {
     max-width: 342px;
   }
-  .offer:hover::before {
-    display: none;
-  }
-  .offer:hover::after {
-    display: none;
-  }
   .offer__subtitle {
     font-size: 18px;
   }
@@ -602,6 +612,9 @@ body {
   }
   .offer__cost, .offer__cost-old {
     font-size: 18px;
+  }
+  .offer__img:hover .offer__icons img {
+    display: none;
   }
 }
 .header__catalog {
@@ -664,11 +677,6 @@ body {
   z-index: 3;
   box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.2039215686);
   background: #fff;
-  animation: fadeIn ease 1s;
-  -webkit-animation: fadeIn ease 1s;
-  -moz-animation: fadeIn ease 1s;
-  -o-animation: fadeIn ease 1s;
-  -ms-animation: fadeIn ease 1s;
   width: 540px;
   height: 552px;
   transform: translate(-67%, 52px);
@@ -1082,6 +1090,9 @@ input[type=checkbox]:checked + label::after {
   .main__form-button {
     margin-top: 36px;
   }
+  .offer__img:hover .offer__icons img {
+    display: none;
+  }
 }
 @keyframes fadeIn {
   0% {
@@ -1091,8 +1102,29 @@ input[type=checkbox]:checked + label::after {
     opacity: 1;
   }
 }
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.pop_up--visible {
+  display: block;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+
 .pop_up--hiding {
-  animation: fadeOut 0.5s ease forwards;
+  animation: fadeOut ease 1s;
+  -webkit-animation: fadeOut ease 1s;
+  -moz-animation: fadeOut ease 1s;
+  -o-animation: fadeOut ease 1s;
+  -ms-animation: fadeOut ease 1s;
 }
 
 .header__basket {

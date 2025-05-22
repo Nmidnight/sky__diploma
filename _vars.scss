@@ -76,21 +76,9 @@ $margin-rl: 0 24px;
     box-shadow: 0px 4px 67px -12px #00000034;
     background: #fff;
 
-    animation: fadeIn ease 1s;  -webkit-animation: fadeIn ease 1s;
- -moz-animation: fadeIn ease 1s;
- -o-animation: fadeIn ease 1s;
- -ms-animation: fadeIn ease 1s;
+
 }
   
-//   animation: fadeOut ease 1s;
-//   -webkit-animation: fadeOut ease 1s;
-//   -moz-animation: fadeOut ease 1s;
-//   -o-animation: fadeOut ease 1s;
-//   -ms-animation: fadeOut ease 1s;
-
-
-
-// }
 
  @keyframes fadeIn {
    0% {opacity:0;}
@@ -117,37 +105,43 @@ $margin-rl: 0 24px;
    100% {opacity:1;}
  }
 
-// @keyframes fadeOut {
-//   0% {opacity:1;}
-//   100% {opacity:0;}
-// }
+ @keyframes fadeOut {
+   0% {opacity:1;}
+   100% {opacity:0;}
+ }
 
-// @-moz-keyframes fadeOut {
-//   0% {opacity:1;}
-//   100% {opacity:0;}
-// }
+ @-moz-keyframes fadeOut {
+   0% {opacity:1;}
+   100% {opacity:0;}
+ }
 
-// @-webkit-keyframes fadeOut {
-//   0% {opacity:1;}
-//   100% {opacity:0;}
-// }
+ @-webkit-keyframes fadeOut {
+   0% {opacity:1;}
+   100% {opacity:0;}
+ }
 
-// @-o-keyframes fadeOut {
-//   0% {opacity:1;}
-//   100% {opacity:0;}
-// }
+ @-o-keyframes fadeOut {
+   0% {opacity:1;}
+   100% {opacity:0;}
+ }
 
-// @-ms-keyframes fadeOut {
-//   0% {opacity:1;}
-//   100% {opacity:0;}
-// }
+ @-ms-keyframes fadeOut {
+   0% {opacity:1;}
+   100% {opacity:0;}
+ }
 
-// .pop_up--visible {
-//   display: block;
-//   animation: fadeIn 0.5s ease forwards;
-// }
+ .pop_up--visible {
+   display: block;
+      animation: fadeIn ease 1s;  -webkit-animation: fadeIn ease 1s;
+ -moz-animation: fadeIn ease 1s;
+ -o-animation: fadeIn ease 1s;
+ -ms-animation: fadeIn ease 1s;
+ }
 
  .pop_up--hiding {
-   animation: fadeOut 0.5s ease forwards;
+      animation: fadeOut ease 1s;
+   -webkit-animation: fadeOut ease 1s;
+   -moz-animation: fadeOut ease 1s;   -o-animation: fadeOut ease 1s;
+   -ms-animation: fadeOut ease 1s;
  }
 

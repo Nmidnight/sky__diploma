@@ -100,6 +100,7 @@ body {
      display: block;
 }
 .basket__popup{
+
      @include vars.pop-up;
      width: 573px;
      height: 480px;
@@ -477,12 +478,6 @@ body {
      .offer img{
           max-width: 342px;
      }
-     .offer:hover::before{
-          display: none;
-     }
-     .offer:hover::after{
-          display: none;
-     }
      .offer__subtitle{
           font-size: 18px
      }
@@ -492,6 +487,9 @@ body {
      .offer__cost, .offer__cost-old{
           font-size: 18px;
      }
+     .offer__img:hover .offer__icons img {
+      display: none;
+}
 }
 
 @import 'catalog/catalog';
