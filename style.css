@@ -534,6 +534,9 @@ body {
     text-align: center;
     margin: 0;
   }
+  .header__nav {
+    margin-top: 32px;
+  }
   .header__logo {
     width: 99px;
   }
