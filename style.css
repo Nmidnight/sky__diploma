@@ -989,29 +989,9 @@ input[type=checkbox]:checked + label::after {
   text-decoration: underline;
 }
 
-.offer:hover::after {
-  content: url(../svg/lock.png);
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  z-index: 1;
-  top: 10px;
-  right: 58px;
-}
-
-.offer:hover::before {
-  content: url(../svg/like.png);
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  z-index: 1;
-  top: 10px;
-  right: 10px;
-}
-
 @media (max-width: 800px) {
   .header__catalog {
-    background-image: url(../img/mobile/catalog_header.png);
+    background-image: url(../img/mobile/catalog__header.png);
     background-position: left center;
   }
   .main {
