@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.pop_up--hiding {
+  animation: fadeOut 0.5s ease forwards;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -117,6 +129,10 @@ body {
   position: relative;
 }
 
+.header__item-basket:hover .basket__popup {
+  display: block;
+}
+
 .basket__popup {
   display: none;
   padding: 40px 48px;
@@ -124,6 +140,11 @@ body {
   z-index: 3;
   box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.2039215686);
   background: #fff;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
   width: 573px;
   height: 480px;
   transform: translate(-85%, 18px);
@@ -177,6 +198,7 @@ body {
 
 .basket__cost-bottom {
   display: flex;
+  gap: 10px;
   justify-content: space-between;
 }
 
@@ -191,6 +213,7 @@ body {
 .basket__cost-bold {
   font-size: 24px;
   font-weight: 500;
+  margin-left: 10px;
 }
 
 .basket__popup-btn {
@@ -641,6 +664,11 @@ body {
   z-index: 3;
   box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.2039215686);
   background: #fff;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
   width: 540px;
   height: 552px;
   transform: translate(-67%, 52px);
@@ -1055,6 +1083,18 @@ input[type=checkbox]:checked + label::after {
     margin-top: 36px;
   }
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.pop_up--hiding {
+  animation: fadeOut 0.5s ease forwards;
+}
+
 .header__basket {
   background-image: url(basket/img/headder-bg.png);
   height: auto;

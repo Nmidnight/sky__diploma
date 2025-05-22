@@ -96,6 +96,9 @@ body {
 .header__item-basket{
      position: relative;
 }
+.header__item-basket:hover .basket__popup{
+     display: block;
+}
 .basket__popup{
      @include vars.pop-up;
      width: 573px;
@@ -141,6 +144,7 @@ body {
 }
 .basket__cost-bottom{
      display: flex;
+     gap: 10px;
      justify-content: space-between;
 }
 .basket__cost-final{
@@ -152,6 +156,7 @@ body {
 .basket__cost-bold{
      font-size: 24px;
      font-weight: 500;
+     margin-left: 10px;
 }
 .basket__popup-btn{
      @include vars.button;
