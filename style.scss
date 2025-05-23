@@ -184,8 +184,8 @@ body {
 }
 .room{
      height: 415px;
-     justify-items: center;
-     align-content: center;
+     justify-content: center;
+     align-items: center;
      @include vars.bg-default;
      text-align-last: center;
 }
