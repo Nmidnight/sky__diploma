@@ -187,6 +187,7 @@ body {
      justify-items: center;
      align-content: center;
      @include vars.bg-default;
+     text-align-last: center;
 }
 .room:nth-child(n+1){
      grid-column: span 6;
