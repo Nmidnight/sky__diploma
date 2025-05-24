@@ -399,7 +399,7 @@ body {
 @media ( max-width: 800px){
 
      .header__content, .main,  .main__catalog, .bottom__content{
-          max-width: 343px;
+       padding: 0 15px;
      }
      .offers__content, .catalog__content, .main__catalog{
           row-gap: 32px;
@@ -476,8 +476,12 @@ body {
      .room__name{
           font-size: 28px;
      }
+     .offers__content{
+          justify-content: center;
+     }
      .offer{
           flex-basis: 100%;
+          max-width: 343px;
      }
      .offer img{
           max-width: 342px;
