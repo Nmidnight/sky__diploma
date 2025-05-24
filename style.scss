@@ -219,13 +219,6 @@ body {
      font-size: 34px;
      text-transform: uppercase;
 }
-.offers__content{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-between;
-     column-gap: 32px;
-     row-gap: 48px;
-}
 .offer {
      flex-basis: calc(33.3% - 32px);
 }
@@ -271,12 +264,13 @@ body {
      color: #888888;
      text-decoration: line-through;
 }
-.catalog__content{
+.catalog__content, .offers__content,.main__catalog{
      display: flex;
      flex-wrap: wrap;
+     justify-content: center;
      column-gap: 32px;
      row-gap: 48px;
-     margin-bottom: 31px;
+     margin-bottom: vars.$margin-top;
 }
 .catalog__link, .offers__link{
      font-weight: 400;
@@ -480,6 +474,7 @@ body {
           justify-content: center;
      }
      .offer{
+
           flex-basis: 100%;
           max-width: 343px;
      }
@@ -497,9 +492,12 @@ body {
      }
      .offer__img:hover .offer__icons img {
       display: none;
+
 }
 }
 
 @import 'catalog/catalog';
 
 @import 'basket/basket.scss';
+
+// for commit//

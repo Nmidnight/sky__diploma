@@ -315,15 +315,6 @@ body {
   text-transform: uppercase;
 }
 
-.offers__content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  -moz-column-gap: 32px;
-       column-gap: 32px;
-  row-gap: 48px;
-}
-
 .offer {
   flex-basis: calc(33.3% - 32px);
 }
@@ -379,13 +370,14 @@ body {
   text-decoration: line-through;
 }
 
-.catalog__content {
+.catalog__content, .offers__content, .main__catalog {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   -moz-column-gap: 32px;
        column-gap: 32px;
   row-gap: 48px;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
 }
 
 .catalog__link, .offers__link {
