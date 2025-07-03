@@ -265,6 +265,7 @@ body {
 }
 
 .room {
+  display: flex;
   height: 415px;
   justify-content: center;
   align-items: center;
@@ -486,6 +487,7 @@ body {
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   -moz-column-gap: 32px;
        column-gap: 32px;
   row-gap: 48px;
